@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>News Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function showNews(category, headline, content, image) {
+      var selectedNews = document.getElementById('selectedNews');
+      selectedNews.innerHTML = 
+      `<h2>${headline}</h2>
+        <img src="${image}" alt="${headline}">
+        <p>${content}</p>`;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>News Website</h1>
+  </header>
+
+ 
+
+  <main>
+    <div class="category">
+      <h2>World News</h2>
+      <div class="news world" onclick="showNews('world', 'World Newz 1', 'Content of the news is here', '../pics/w1.jpeg')">
+        <img src="../pics/w1.jpeg" alt="World News Image 1">
+        <h3>World Newz 1</h3>
+        <p>Summary of news...</p>
+      </div>
+      <div class="news world" onclick="showNews('world', 'World Newz 2', 'Content of the news is here', '../pics/w2.jpg')">
+        <img src="../pics/w2.jpg" alt="World News Image 2">
+        <h3>World Newz 2</h3>
+        <p>Summary of news...</p>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Sports</h2>
+      <div class="news sports" onclick="showNews('sports', 'Sports News 1', 'Content of the news is here', '../pics/s1.jpeg')">
+        <img src="../pics/s1.jpeg" alt="Sports News Image 1">
+        <h3>Sports News 1</h3>
+        <p>Summary of news...</p>
+      </div>
+      <div class="news sports" onclick="showNews('sports', 'Sports News 2', 'Content of the news is here', '../pics/s2.jpeg')">
+        <img src="../pics/s2.jpeg" alt="Sports News Image 2">
+        <h3>Sports News 2</h3>
+        <p>Summary of news...</p>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Technology</h2>
+      <div class="news technology" onclick="showNews('technology', 'Tech News 1', 'Content of the news is here', '../pics/t1.jpeg')">
+        <img src="../pics/t1.jpeg" alt="Technology News Image 1">
+        <h3>Tech News 1</h3>
+        <p>Summary of news...</p>
+      </div>
+      <div class="news technology" onclick="showNews('technology', 'Tech News 2', 'Content of the news is here', '../pics/t2.webp')">
+        <img src="../pics/t2.webp" alt="Technology News Image 2">
+        <h3>Tech News 2</h3>
+        <p>Summary of news...</p>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>City News</h2>
+      <div class="news world" onclick="showNews('world', 'City Newz 1', 'Content of the news is here', '../pics/c1.jpeg')">
+        <img src="../pics/c1.jpeg" alt="World News Image 1">
+        <h3>City Newz 1</h3>
+        <p>Summary of news...</p>
+      </div>
+      <div class="news world" onclick="showNews('world', 'City Newz 2', 'Content of the news is here', '../pics/c2.webp')">
+        <img src="../pics/c2.webp" alt="World News Image 2">
+        <h3>City Newz 2</h3>
+        <p>Summary of news...</p>
+      </div>
+    </div>
+    <div class="category">
+      <h2>Political News</h2>
+      <div class="news world" onclick="showNews('world', 'Political Newz 1', 'Content of the news is here', '../pics/p1.webp')">
+        <img src="../pics/p1.webp" alt="World News Image 1">
+        <h3>Political Newz 1</h3>
+        <p>Summary of news...</p>
+      </div>
+      <div class="news world" onclick="showNews('world', 'Political Newz 2', 'Content of the news is here', '../pics/p2.jpeg')">
+        <img src="../pics/p2.jpeg" alt="World News Image 2">
+        <h3>Political Newz 2</h3>
+        <p>Summary of news...</p>
+      </div>
+    </div>
+    <div class="category">
+      <h2>Crime News</h2>
+      <div class="news world" onclick="showNews('world', 'Crime Newz 1', 'Content of the news is here', '../pics/cr1.webp')">
+        <img src="../pics/cr1.webp" alt="World News Image 1">
+        <h3>Crime Newz 1</h3>
+        <p>Summary of news...</p>
+      </div>
+      <div class="news world" onclick="showNews('world', 'Crime Newz 2', 'Content of the news is here', '../pics/cr2.jpeg')">
+        <img src="../pics/cr2.jpeg" alt="World News Image 2">
+        <h3>Crime Newz 2</h3>
+        <p>Summary of news...</p>
+      </div>
+    </div>
+  </main>
+  <hr>
+
+  <div id="selectedNews"></div>
+</body>
+</html>
